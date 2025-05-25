@@ -1,0 +1,733 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0a0f2b;
+  color: #ffffff;
+  margin: 0;
+  overflow-x: hidden;
+  padding-top: 80px;
+}
+
+/* Header */
+header {
+  background: rgba(10, 15, 43, 0.95);
+  padding: 15px 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff !important;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #c0c7db !important;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+  color: #00d4ff !important;
+  transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url('https://images.unsplash.com/photo-1523987355523-c7b5b0dd4a2c?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(10, 15, 43, 0.7), rgba(10, 15, 43, 0.3));
+  z-index: 1;
+}
+
+.hero-content {
+  z-index: 2;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #c0c7db;
+  margin-bottom: 30px;
+}
+
+.btn-hero {
+  background: #00d4ff;
+  color: #0a0f2b;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 15px 50px;
+  border-radius: 50px;
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.btn-hero:hover {
+  background: #00b0d6;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 212, 255, 0.5);
+}
+
+/* Aviões Section */
+.aviao-section {
+  padding: 80px 0;
+  background: #1c253f;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #2a334f;
+  transition: transform 0.4s, box-shadow 0.4s;
+  height: 450px;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 212, 255, 0.2);
+}
+
+.card:active {
+  transform: scale(0.97);
+}
+
+.card-img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.card:hover .card-img {
+  transform: scale(1.1);
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #c0c7db;
+}
+
+/* Equipe Section */
+.equipe-section {
+  padding: 80px 0;
+  background: #0a0f2b;
+}
+
+.team-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #2a334f;
+  transition: transform 0.4s, box-shadow 0.4s;
+  height: 450px;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 212, 255, 0.2);
+}
+
+.team-img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.team-body {
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.team-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.team-text {
+  font-size: 1rem;
+  color: #c0c7db;
+}
+
+/* História Section */
+.historia-section {
+  padding: 80px 0;
+  background: #1c253f;
+}
+
+.historia-img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.historia-text {
+  font-size: 1.2rem;
+  color: #c0c7db;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn-historia {
+  background: #00d4ff;
+  color: #0a0f2b;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: none;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn-historia:hover {
+  background: #00b0d6;
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  background: #0a0f2b;
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #c0c7db;
+}
+
+footer a {
+  color: #00d4ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.card:hover, .team-card:hover {
+  animation: float 3s ease-in-out infinite;
+}
+
+
+/* Aviões Galeria */
+.avioes-galeria {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #1c253f, #0a0f2b);
+}
+
+.galeria-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.galeria-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.3);
+}
+
+.galeria-img {
+  width: 100%;
+  height: 85%; /* Espaço reservado para a legenda */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  display: block;
+}
+
+.galeria-caption {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #c0c7db;
+  text-align: center;
+  margin: 10px 0 5px;
+  padding: 0 10px;
+  transition: color 0.3s;
+}
+
+.galeria-caption:hover {
+  color: #00d4ff;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .galeria-caption {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .galeria-caption {
+    font-size: 0.9rem;
+    margin: 8px 0 3px;
+  }
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Galeria Video */
+.galeria-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente, se necessário */
+  width: 100%; /* Garante que o contêiner ocupe a largura disponível */
+  max-width: 800px; /* Limita a largura do vídeo */
+  margin: 0 auto 40px; /* Centraliza e adiciona margem inferior */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.2);
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+}
+
+
+/* Aviões Galeria */
+.avioes-galeria {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #1c253f, #0a0f2b);
+}
+
+.galeria-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.2);
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.galeria-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: visible;
+  background: #0a0f2b;
+  height: 100%;
+}
+
+.galeria-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.3);
+}
+
+.galeria-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  display: block;
+}
+
+.galeria-caption {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #c0c7db;
+  text-align: center;
+  margin: 10px 10px 15px;
+  padding: 0 10px;
+  transition: color 0.3s;
+  word-wrap: break-word;
+}
+
+.galeria-caption:hover {
+  color: #00d4ff;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .galeria-video {
+    max-width: 90%;
+  }
+
+  .video-player {
+    max-height: 450px;
+  }
+
+  .galeria-img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .avioes-galeria {
+    padding: 60px 0;
+  }
+
+  .galeria-video {
+    max-width: 95%;
+    margin-bottom: 30px;
+  }
+
+  .video-player {
+    max-height: 400px;
+  }
+
+  .galeria-img {
+    height: 160px;
+  }
+
+  .galeria-caption {
+    font-size: 0.95rem;
+    margin: 8px 8px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .galeria-video {
+    max-width: 100%;
+  }
+
+  .video-player {
+    max-height: 350px;
+  }
+
+  .galeria-img {
+    height: 140px;
+  }
+
+  .galeria-caption {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .avioes-galeria {
+    padding: 40px 0;
+  }
+
+  .galeria-video {
+    margin-bottom: 20px;
+  }
+
+  .video-player {
+    max-height: 300px;
+  }
+
+  .galeria-img {
+    height: 120px;
+  }
+
+  .galeria-caption {
+    font-size: 0.85rem;
+    margin: 6px 6px 10px;
+  }
+}
+
+.team-img {
+  height: 250px; /* Maior */
+}
+@media (max-width: 576px) {
+  .team-img {
+    height: 150px; /* Maior em celulares */
+  }
+}
+.team-title {
+  font-size: 1.4rem;
+  color: #00d4ff;
+}
+.team-text {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* Equipe Section */
+.equipe-section {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #1c253f, #0a0f2b);
+}
+
+.equipe-section .row {
+  gap: 2rem; /* Aumenta o espaçamento entre os cards (32px) */
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.2);
+  overflow: hidden;
+  background: #0a0f2b;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+  margin: 0 10px; /* Adiciona margem lateral para espaçamento extra */
+}
+
+.team-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.3);
+}
+
+.team-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  display: block;
+}
+
+.team-body {
+  padding: 15px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.team-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.team-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #c0c7db;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .team-img {
+    height: 180px;
+  }
+
+  .team-title {
+    font-size: 1.1rem;
+  }
+
+  .team-text {
+    font-size: 0.9rem;
+  }
+
+  .equipe-section .row {
+    gap: 1.5rem; /* Reduz o gap para 24px */
+  }
+
+  .team-card {
+    margin: 0 8px; /* Margem menor */
+  }
+}
+
+@media (max-width: 992px) {
+  .equipe-section {
+    padding: 60px 0;
+  }
+
+  .team-img {
+    height: 160px;
+  }
+
+  .team-title {
+    font-size: 1.05rem;
+  }
+
+  .team-text {
+    font-size: 0.85rem;
+  }
+
+  .equipe-section .row {
+    gap: 1.25rem; /* 20px para tablets */
+  }
+
+  .team-card {
+    margin: 0 6px;
+  }
+
+  /* 3 colunas em tablets grandes */
+  .row > .col-md-6 {
+    flex: 1 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-img {
+    height: 150px;
+  }
+
+  .team-title {
+    font-size: 1rem;
+  }
+
+  .team-text {
+    font-size: 0.8rem;
+  }
+
+  .equipe-section .row {
+    gap: 1rem; /* 16px para tablets menores */
+  }
+
+  .team-card {
+    margin: 0 5px;
+  }
+
+  /* 2 colunas */
+  .row > .col-md-6 {
+    flex: 1 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .equipe-section {
+    padding: 40px 0;
+  }
+
+  .team-img {
+    height: 120px;
+  }
+
+  .team-title {
+    font-size: 0.95rem;
+  }
+
+  .team-text {
+    font-size: 0.75rem;
+  }
+
+  .team-body {
+    padding: 10px;
+  }
+
+  .equipe-section .row {
+    gap: 0.75rem; 
+  }
+
+  .team-card {
+    margin: 0; 
+  }
+
+  /* 1 coluna */
+  .row > .col-sm-12 {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+}
