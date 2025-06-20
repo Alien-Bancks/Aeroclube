@@ -1,42 +1,66 @@
+/* Body */
 body {
   font-family: 'Inter', sans-serif;
-  background: #0a0f2b;
-  color: #ffffff;
+  background: #ffffff; /* White background */
+  color: #000000; /* Black text */
   margin: 0;
   overflow-x: hidden;
   padding-top: 80px;
 }
 
 /* Header */
+/* Header fixo refinado */
 header {
-  background: rgba(10, 15, 43, 0.95);
-  padding: 15px 0;
-  position: relative;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 8px 0; /* Altura mais compacta */
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
   backdrop-filter: blur(8px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* Sombra leve e profissional */
 }
 
+/* Marca */
 .navbar-brand {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #ffffff !important;
-  letter-spacing: 1px;
+  font-size: 1.5rem; /* Menor */
+  font-weight: 600;
+  color: #000000 !important;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
 }
 
+/* Links */
 .nav-link {
-  color: #c0c7db !important;
-  font-size: 1rem;
+  color: #444444 !important;
+  font-size: 0.95rem;
   font-weight: 400;
-  transition: color 0.3s, transform 0.3s;
+  padding: 8px 12px;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #00d4ff !important;
-  transform: translateY(-2px);
+  color: #000000 !important;
+  transform: translateY(-1px);
 }
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+
+  header {
+    padding: 6px 0;
+  }
+}
+
 
 /* Hero Section */
 .hero {
@@ -45,7 +69,7 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: url('https://images.unsplash.com/photo-1523987355523-c7b5b0dd4a2c?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+  background: url('images/aaaaaaaa.jpeg') no-repeat center center/cover;
   position: relative;
   overflow: hidden;
 }
@@ -57,13 +81,13 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(10, 15, 43, 0.7), rgba(10, 15, 43, 0.3));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)); /* White gradient */
   z-index: 1;
 }
 
 .hero-content {
   z-index: 2;
-  max-width: 1000px;
+  max-width: 800px;
   padding: 20px;
 }
 
@@ -71,8 +95,8 @@ header {
   font-family: 'Poppins', sans-serif;
   font-size: 5rem;
   font-weight: 700;
-  color: #ffffff;
-  text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+  color: #000000; /* Black */
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Black shadow */
   margin-bottom: 20px;
   line-height: 1.1;
 }
@@ -80,13 +104,13 @@ header {
 .hero p {
   font-size: 1.5rem;
   font-weight: 300;
-  color: #c0c7db;
+  color: #333333; /* Dark gray */
   margin-bottom: 30px;
 }
 
 .btn-hero {
-  background: #00d4ff;
-  color: #0a0f2b;
+  background: #000000; /* Black button */
+  color: #ffffff; /* White text */
   font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
@@ -97,22 +121,22 @@ header {
 }
 
 .btn-hero:hover {
-  background: #00b0d6;
+  background: #333333; /* Dark gray hover */
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 212, 255, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Black shadow */
 }
 
 /* Aviões Section */
 .aviao-section {
   padding: 80px 0;
-  background: #1c253f;
+  background: #f5f5f5; /* Light gray */
 }
 
 .section-title {
   font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #000000; /* Black */
   text-align: center;
   margin-bottom: 50px;
 }
@@ -121,7 +145,7 @@ header {
   border: none;
   border-radius: 15px;
   overflow: hidden;
-  background: #2a334f;
+  background: #ffffff; /* White card */
   transition: transform 0.4s, box-shadow 0.4s;
   height: 450px;
   position: relative;
@@ -129,7 +153,7 @@ header {
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 212, 255, 0.2);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Black shadow */
 }
 
 .card:active {
@@ -150,7 +174,7 @@ header {
 .card-body {
   padding: 20px;
   text-align: center;
-  color: #ffffff;
+  color: #000000; /* Black */
 }
 
 .card-title {
@@ -162,27 +186,27 @@ header {
 
 .card-text {
   font-size: 1rem;
-  color: #c0c7db;
+  color: #333333; /* Dark gray */
 }
 
 /* Equipe Section */
 .equipe-section {
   padding: 80px 0;
-  background: #0a0f2b;
+  background: #ffffff; /* White */
 }
 
 .team-card {
   border: none;
   border-radius: 15px;
   overflow: hidden;
-  background: #2a334f;
+  background: #ffffff; /* White card */
   transition: transform 0.4s, box-shadow 0.4s;
   height: 450px;
 }
 
 .team-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 212, 255, 0.2);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Black shadow */
 }
 
 .team-img {
@@ -194,7 +218,7 @@ header {
 .team-body {
   padding: 20px;
   text-align: center;
-  color: #ffffff;
+  color: #000000; /* Black */
 }
 
 .team-title {
@@ -206,31 +230,31 @@ header {
 
 .team-text {
   font-size: 1rem;
-  color: #c0c7db;
+  color: #333333; /* Dark gray */
 }
 
 /* História Section */
 .historia-section {
   padding: 80px 0;
-  background: #1c253f;
+  background: #f5f5f5; /* Light gray */
 }
 
 .historia-img {
   width: 100%;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Black shadow */
 }
 
 .historia-text {
   font-size: 1.2rem;
-  color: #c0c7db;
+  color: #333333; /* Dark gray */
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
 .btn-historia {
-  background: #00d4ff;
-  color: #0a0f2b;
+  background: #000000; /* Black button */
+  color: #ffffff; /* White text */
   font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
   padding: 10px 30px;
@@ -240,13 +264,13 @@ header {
 }
 
 .btn-historia:hover {
-  background: #00b0d6;
+  background: #333333; /* Dark gray hover */
   transform: translateY(-5px);
 }
 
 /* Footer */
 footer {
-  background: #0a0f2b;
+  background: #ffffff; /* White */
   padding: 40px 0;
   text-align: center;
 }
@@ -254,11 +278,11 @@ footer {
 footer p {
   margin: 0;
   font-size: 0.9rem;
-  color: #c0c7db;
+  color: #333333; /* Dark gray */
 }
 
 footer a {
-  color: #00d4ff;
+  color: #000000; /* Black */
   text-decoration: none;
 }
 
@@ -277,242 +301,210 @@ footer a:hover {
   animation: float 3s ease-in-out infinite;
 }
 
-
-/* Aviões Galeria */
+/* Gallery Section */
 .avioes-galeria {
-  padding: 100px 0;
-  background: linear-gradient(180deg, #1c253f, #0a0f2b);
+  padding: 60px 0;
+  background: #ffffff; /* White */
 }
 
+/* Section Title */
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000; /* Black */
+  text-align: center;
+  margin-bottom: 40px;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2); /* Black glow */
+}
+
+/* Gallery Item */
 .galeria-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
-  aspect-ratio: 4 / 3;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  background: #ffffff; /* White card */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Black shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  height: 240px;
+  max-width: 100%;
+  border: 1px solid transparent;
+  position: relative;
+  z-index: 1;
 }
 
 .galeria-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Black glow */
+  border: 1px solid #000000; /* Black border */
 }
 
-.galeria-img {
+/* Media (Images and Videos) */
+.galeria-img,
+.galeria-video {
   width: 100%;
-  height: 85%; /* Espaço reservado para a legenda */
+  height: calc(100% - 30px);
   object-fit: cover;
-  border-radius: 10px 10px 0 0;
-  cursor: pointer;
   display: block;
+  border-radius: 12px 12px 0 0;
+  cursor: pointer;
+  max-width: 100%;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
+/* Caption */
 .galeria-caption {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #c0c7db;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #333333; /* Dark gray */
   text-align: center;
-  margin: 10px 0 5px;
-  padding: 0 10px;
-  transition: color 0.3s;
+  padding: 4px;
+  flex: 0 0 auto;
+  background: rgba(255, 255, 255, 0.9); /* White background */
+  transition: color 0.3s ease;
 }
 
 .galeria-caption:hover {
-  color: #00d4ff;
+  color: #000000; /* Black hover */
 }
 
-/* Responsive */
-@media (max-width: 992px) {
-  .galeria-caption {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .galeria-caption {
-    font-size: 0.9rem;
-    margin: 8px 0 3px;
-  }
-}
-
-/* Fade-in Animation */
-.fade-in {
+/* Overlay for Expanded View */
+.galeria-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Lighter black overlay */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition: opacity 0.5s ease;
 }
 
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Galeria Video */
-.galeria-video {
+.galeria-overlay.active {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Centraliza horizontalmente */
-  justify-content: center; /* Centraliza verticalmente, se necessário */
-  width: 100%; /* Garante que o contêiner ocupe a largura disponível */
-  max-width: 800px; /* Limita a largura do vídeo */
-  margin: 0 auto 40px; /* Centraliza e adiciona margem inferior */
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.2);
+  opacity: 1;
 }
 
-.video-player {
+/* Expanded Media */
+.galeria-item.expanded {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  z-index: 1001;
+  height: auto;
+  max-width: 80vw;
+  max-height: 80vh;
+  border: 2px solid #000000; /* Black border */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4); /* Black shadow */
+}
+
+.galeria-item.expanded .galeria-img,
+.galeria-item.expanded .galeria-video {
   width: 100%;
   height: auto;
-  max-height: 500px;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
+  max-width: 80vw;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 12px;
 }
 
-/* Responsive */
-@media (max-width: 992px) {
-  .hero h1 {
-    font-size: 3.5rem;
+.galeria-item.expanded .galeria-caption {
+  display: none;
+}
+
+/* Grid Fix */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.col-lg-4,
+.col-md-6,
+.col-sm-12 {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .galeria-item {
+    height: 210px;
   }
 
-  .hero p {
-    font-size: 1.3rem;
+  .galeria-img,
+  .galeria-video {
+    height: calc(100% - 28px);
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 35px;
   }
 
-}
-
-
-/* Aviões Galeria */
-.avioes-galeria {
-  padding: 80px 0;
-  background: linear-gradient(180deg, #1c253f, #0a0f2b);
-}
-
-.galeria-video {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto 40px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.2);
-}
-
-.video-player {
-  width: 100%;
-  height: auto;
-  max-height: 500px;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
-}
-
-.galeria-item {
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
-  overflow: visible;
-  background: #0a0f2b;
-  height: 100%;
-}
-
-.galeria-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.3);
-}
-
-.galeria-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-  cursor: pointer;
-  display: block;
-}
-
-.galeria-caption {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #c0c7db;
-  text-align: center;
-  margin: 10px 10px 15px;
-  padding: 0 10px;
-  transition: color 0.3s;
-  word-wrap: break-word;
-}
-
-.galeria-caption:hover {
-  color: #00d4ff;
-}
-
-/* Responsive */
-@media (max-width: 1200px) {
-  .galeria-video {
-    max-width: 90%;
-  }
-
-  .video-player {
-    max-height: 450px;
-  }
-
-  .galeria-img {
-    height: 180px;
+  .galeria-caption {
+    font-size: 0.65rem;
+    padding: 4px;
   }
 }
 
 @media (max-width: 992px) {
   .avioes-galeria {
-    padding: 60px 0;
+    padding: 50px 0;
   }
 
+  .galeria-item {
+    height: 180px;
+  }
+
+  .galeria-img,
   .galeria-video {
-    max-width: 95%;
+    height: calc(100% - 26px);
+  }
+
+  .section-title {
+    font-size: 1.6rem;
     margin-bottom: 30px;
   }
 
-  .video-player {
-    max-height: 400px;
-  }
-
-  .galeria-img {
-    height: 160px;
-  }
-
   .galeria-caption {
-    font-size: 0.95rem;
-    margin: 8px 8px 12px;
+    font-size: 0.6rem;
+    padding: 3px;
   }
 }
 
 @media (max-width: 768px) {
+  .galeria-item {
+    height: 150px;
+  }
+
+  .galeria-img,
   .galeria-video {
-    max-width: 100%;
+    height: calc(100% - 24px);
   }
 
-  .video-player {
-    max-height: 350px;
-  }
-
-  .galeria-img {
-    height: 140px;
+  .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
   }
 
   .galeria-caption {
-    font-size: 0.9rem;
+    font-size: 0.55rem;
+    padding: 3px;
+  }
+
+  .galeria-item.expanded {
+    transform: translate(-50%, -50%) scale(1.5);
   }
 }
 
@@ -521,66 +513,72 @@ footer a:hover {
     padding: 40px 0;
   }
 
-  .galeria-video {
-    margin-bottom: 20px;
-  }
-
-  .video-player {
-    max-height: 300px;
-  }
-
-  .galeria-img {
+  .galeria-item {
     height: 120px;
   }
 
+  .galeria-img,
+  .galeria-video {
+    height: calc(100% - 22px);
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
   .galeria-caption {
-    font-size: 0.85rem;
-    margin: 6px 6px 10px;
+    font-size: 0.5rem;
+    padding: 2px;
+  }
+
+  .col-sm-12 {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 15px;
+  }
+
+  .galeria-item.expanded {
+    transform: translate(-50%, -50%) scale(1.2);
   }
 }
 
-.team-img {
-  height: 250px; /* Maior */
+/* Animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
 }
-@media (max-width: 576px) {
-  .team-img {
-    height: 150px; /* Maior em celulares */
-  }
-}
-.team-title {
-  font-size: 1.4rem;
-  color: #00d4ff;
-}
-.team-text {
-  font-size: 1rem;
-  color: #ffffff;
+
+.galeria-item:hover {
+  animation: float 2s ease-in-out infinite;
 }
 
 /* Equipe Section */
 .equipe-section {
   padding: 80px 0;
-  background: linear-gradient(180deg, #1c253f, #0a0f2b);
+  background: #ffffff; /* White */
 }
 
 .equipe-section .row {
-  gap: 2rem; /* Aumenta o espaçamento entre os cards (32px) */
+  gap: 2rem;
 }
 
 .team-card {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Black shadow */
   overflow: hidden;
-  background: #0a0f2b;
+  background: #ffffff; /* White card */
   transition: transform 0.3s, box-shadow 0.3s;
   height: 100%;
-  margin: 0 10px; /* Adiciona margem lateral para espaçamento extra */
+  margin: 0 10px;
 }
 
 .team-card:hover {
   transform: scale(1.03);
-  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Black shadow */
 }
 
 .team-img {
@@ -601,14 +599,14 @@ footer a:hover {
   font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
-  color: #ffffff;
+  color: #000000; /* Black */
   margin-bottom: 10px;
 }
 
 .team-text {
   font-family: 'Inter', sans-serif;
   font-size: 0.95rem;
-  color: #c0c7db;
+  color: #333333; /* Dark gray */
   margin: 0;
   word-wrap: break-word;
 }
@@ -628,11 +626,11 @@ footer a:hover {
   }
 
   .equipe-section .row {
-    gap: 1.5rem; /* Reduz o gap para 24px */
+    gap: 1.5rem;
   }
 
   .team-card {
-    margin: 0 8px; /* Margem menor */
+    margin: 0 8px;
   }
 }
 
@@ -654,14 +652,13 @@ footer a:hover {
   }
 
   .equipe-section .row {
-    gap: 1.25rem; /* 20px para tablets */
+    gap: 1.25rem;
   }
 
   .team-card {
     margin: 0 6px;
   }
 
-  /* 3 colunas em tablets grandes */
   .row > .col-md-6 {
     flex: 1 0 33.33%;
     max-width: 33.33%;
@@ -682,125 +679,18 @@ footer a:hover {
   }
 
   .equipe-section .row {
-    gap: 1rem; /* 16px para tablets menores */
+    gap: 1rem;
   }
 
   .team-card {
     margin: 0 5px;
   }
 
-  /* 2 colunas */
   .row > .col-md-6 {
     flex: 1 0 50%;
     max-width: 50%;
   }
 }
-
-
-.popup-confirmacao {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: #ffffff;
-      color: #000000;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-      z-index: 1050;
-      display: none;
-      max-width: 500px;
-      text-align: center;
-    }
-    .popup-confirmacao h5 {
-      margin-bottom: 15px;
-      font-size: 1.4rem;
-      font-weight: bold;
-    }
-    .popup-confirmacao p {
-      font-size: 1rem;
-    }
-    .popup-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      z-index: 1040;
-      display: none;
-    }
-    .card-form-wrapper {
-      background: #122a43;
-      padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-      min-height: 100%;
-    }
-
-
-#loginArea {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-#loginArea input[type="password"],
-#loginArea button {
-  width: 280px;
-  max-width: 90vw;
-  display: block;
-  margin: 0 auto 12px auto; /* Centraliza e dá espaço embaixo */
-  box-sizing: border-box;   /* Para evitar quebra de largura */
-}
-
-#loginArea input[type="password"] {
-  padding: 8px 12px;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: 1px solid #444d6e;
-  background-color: #283857;
-  color: #e0e6f0;
-  transition: border-color 0.3s ease;
-}
-
-#loginArea input[type="password"]::placeholder {
-  color: #9bb0cf;
-}
-
-#loginArea input[type="password"]:focus {
-  outline: none;
-  border-color: #00d4ff;
-  background-color: #324270;
-  color: #fff;
-  box-shadow: none;
-}
-
-#loginArea button {
-  font-weight: 600;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  background-color: #00b0d6;
-  color: #0a0f2b;
-  box-shadow: none;
-  transition: background-color 0.3s ease;
-  padding: 10px 20px;
-}
-
-#loginArea button:hover {
-  background-color: #008ea8;
-  color: #fff;
-}
-
-@media (max-width: 576px) {
-  #loginArea input[type="password"],
-  #loginArea button {
-    width: 90vw;
-    margin-bottom: 12px;
-  }
-}
-
 
 @media (max-width: 576px) {
   .equipe-section {
@@ -824,16 +714,124 @@ footer a:hover {
   }
 
   .equipe-section .row {
-    gap: 0.75rem; 
+    gap: 0.75rem;
   }
 
   .team-card {
-    margin: 0; 
+    margin: 0;
   }
 
-  /* 1 coluna */
   .row > .col-sm-12 {
     flex: 1 0 100%;
     max-width: 100%;
+  }
+}
+
+/* Popup */
+.popup-confirmacao {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff; /* White */
+  color: #000000; /* Black */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Black shadow */
+  z-index: 1050;
+  display: none;
+  max-width: 500px;
+  text-align: center;
+}
+
+.popup-confirmacao h5 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.popup-confirmacao p {
+  font-size: 1rem;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Lighter black overlay */
+  z-index: 1040;
+  display: none;
+}
+
+.card-form-wrapper {
+  background: #f5f5f5; /* Light gray */
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Black shadow */
+  min-height: 100%;
+}
+
+/* Login Area */
+#loginArea {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#loginArea input[type="password"],
+#loginArea button {
+  width: 280px;
+  max-width: 90vw;
+  display: block;
+  margin: 0 auto 12px auto;
+  box-sizing: border-box;
+}
+
+#loginArea input[type="password"] {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #333333; /* Dark gray border */
+  background-color: #ffffff; /* White */
+  color: #000000; /* Black */
+  transition: border-color 0.3s ease;
+}
+
+#loginArea input[type="password"]::placeholder {
+  color: #666666; /* Medium gray */
+}
+
+#loginArea input[type="password"]:focus {
+  outline: none;
+  border-color: #000000; /* Black */
+  background-color: #f5f5f5; /* Light gray */
+  color: #000000; /* Black */
+  box-shadow: none;
+}
+
+#loginArea button {
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #000000; /* Black button */
+  color: #ffffff; /* White text */
+  box-shadow: none;
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+}
+
+#loginArea button:hover {
+  background-color: #333333; /* Dark gray hover */
+  color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  #loginArea input[type="password"],
+  #loginArea button {
+    width: 90vw;
+    margin-bottom: 12px;
   }
 }
