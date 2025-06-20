@@ -696,6 +696,112 @@ footer a:hover {
   }
 }
 
+
+.popup-confirmacao {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #ffffff;
+      color: #000000;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      z-index: 1050;
+      display: none;
+      max-width: 500px;
+      text-align: center;
+    }
+    .popup-confirmacao h5 {
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+    .popup-confirmacao p {
+      font-size: 1rem;
+    }
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1040;
+      display: none;
+    }
+    .card-form-wrapper {
+      background: #122a43;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      min-height: 100%;
+    }
+
+
+#loginArea {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#loginArea input[type="password"],
+#loginArea button {
+  width: 280px;
+  max-width: 90vw;
+  display: block;
+  margin: 0 auto 12px auto; /* Centraliza e dá espaço embaixo */
+  box-sizing: border-box;   /* Para evitar quebra de largura */
+}
+
+#loginArea input[type="password"] {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #444d6e;
+  background-color: #283857;
+  color: #e0e6f0;
+  transition: border-color 0.3s ease;
+}
+
+#loginArea input[type="password"]::placeholder {
+  color: #9bb0cf;
+}
+
+#loginArea input[type="password"]:focus {
+  outline: none;
+  border-color: #00d4ff;
+  background-color: #324270;
+  color: #fff;
+  box-shadow: none;
+}
+
+#loginArea button {
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #00b0d6;
+  color: #0a0f2b;
+  box-shadow: none;
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+}
+
+#loginArea button:hover {
+  background-color: #008ea8;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  #loginArea input[type="password"],
+  #loginArea button {
+    width: 90vw;
+    margin-bottom: 12px;
+  }
+}
+
+
 @media (max-width: 576px) {
   .equipe-section {
     padding: 40px 0;
